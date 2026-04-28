@@ -23,7 +23,7 @@ It is designed to be used **alongside** your libft project — not submitted wit
 Clone both repositories as siblings into the same parent folder:
 
 ```bash
-git clone <your-libft-repo-url> libft
+git clone <your-libft-repo-url> Libft
 git clone https://github.com/diego2crocs/LibftTest testlibft
 ```
 
@@ -31,14 +31,14 @@ Expected directory layout:
 
 ```
 some-folder/
-├── libft/        ← your libft project (to submit)
+├── Libft/        ← your libft project (to submit)
 └── testlibft/    ← this repository (do NOT submit)
     ├── main_test.c
     ├── Makefile
     └── README.md
 ```
 
-> The Makefile uses `../libft` as the path to your libft — this layout is required.
+> The Makefile uses `../Libft` as the path to your libft — this layout is required.
 
 ### Usage
 
@@ -143,7 +143,7 @@ Conçu pour être utilisé **à côté** de ton projet libft — à ne pas rendr
 Clone les deux dépôts côte à côte dans le même dossier parent :
 
 ```bash
-git clone <url-de-ton-repo-libft> libft
+git clone <url-de-ton-repo-libft> Libft
 git clone https://github.com/diego2crocs/LibftTest testlibft
 ```
 
@@ -151,14 +151,14 @@ Structure attendue :
 
 ```
 dossier-parent/
-├── libft/        ← ton projet libft (à rendre)
+├── Libft/        ← ton projet libft (à rendre)
 └── testlibft/    ← ce dépôt (ne pas rendre)
     ├── main_test.c
     ├── Makefile
     └── README.md
 ```
 
-> Le Makefile utilise `../libft` comme chemin vers ta libft — cette structure est obligatoire.
+> Le Makefile utilise `../Libft` comme chemin vers ta libft — cette structure est obligatoire.
 
 ### Utilisation
 
