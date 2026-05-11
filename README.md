@@ -6,7 +6,7 @@ Suite de tests personnelle pour libft. Teste les 43 fonctions avec un affichage 
 
 ```
 HomeAfter42/
-  libft/       ← projet à rendre
+  Libft/       ← projet à rendre
   testlibft/   ← ce dossier, ne pas rendre
     main_test.c
     Makefile
