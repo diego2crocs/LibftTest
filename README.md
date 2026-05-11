@@ -12,7 +12,7 @@ HomeAfter42/
     Makefile
 ```
 
-Si ton dossier `libft/` est ailleurs, modifie `LIBFT_DIR` au début du Makefile.
+Si ton dossier `Libft/` est ailleurs, modifie `LIBFT_DIR` au début du Makefile.
 
 ## Utilisation
 
@@ -23,11 +23,11 @@ Si ton dossier `libft/` est ailleurs, modifie `LIBFT_DIR` au début du Makefile.
 | `make clean` | Nettoie les binaires |
 | `make re` | clean + all |
 
-Le Makefile compile automatiquement `../libft` avant de compiler les tests.
+Le Makefile compile automatiquement `../Libft` avant de compiler les tests.
 
 ## Ce que ça vérifie
 
-- **Fichiers en trop** : signale tout fichier dans `libft/` qui n'est pas autorisé par le sujet (`a.out`, `*.o`, scripts orphelins, etc.). Les artefacts de build (`libft.a`, `.o`) sont automatiquement nettoyés avant la vérification via un `make fclean` côté libft.
+- **Fichiers en trop** : signale tout fichier dans `Libft/` qui n'est pas autorisé par le sujet (`a.out`, `*.o`, scripts orphelins, etc.). Les artefacts de build (`libft.a`, `.o`) sont automatiquement nettoyés avant la vérification via un `make fclean` côté libft.
 - **Norminette** : lance `norminette` sur le dossier libft et n'affiche que les erreurs. Si la norminette n'est pas installée, l'étape est skippée avec un warning.
 - **Compilation** : compile la libft puis le tester avec `-Wall -Wextra -Werror`. Les erreurs de compilation sont affichées proprement.
 - **Tests fonctionnels** : 43 fonctions testées (partie obligatoire + bonus liste chaînée).
@@ -50,5 +50,4 @@ Retourne le code de sortie `1` si un test échoue, `0` si tout passe.
 
 ## Notes
 
-- Si tu ne fais pas la partie bonus de la libft, retire les fichiers `ft_lst*_bonus.c` de la variable `ALLOWED_FILES` au début du Makefile, et commente l'appel à `test_list()` dans `main_test.c`.
 - Valgrind doit être installé sur le système. Sur macOS, il faut utiliser `leaks` à la place (non géré par ce tester).
