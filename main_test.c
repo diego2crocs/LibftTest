@@ -15,7 +15,6 @@ static int	g_pass = 0;
 static int	g_fail = 0;
 static int	g_idx  = 0;
 
-/* Liste des erreurs de la fonction en cours, affichée à la fin de la ligne */
 static char	g_errs[4096];
 static int	g_err_len = 0;
 
@@ -51,8 +50,6 @@ static void	check(int ok, const char *err)
 				"     " RED "→ test %d: %s" RESET "\n", g_idx, err);
 	}
 }
-
-/* ===== CHARACTER CHECKS ===== */
 
 static void	test_isalpha(void)
 {
@@ -124,8 +121,6 @@ static void	test_tolower(void)
 	check(ft_tolower('1') == '1', "'1' should stay '1'");
 	end_fn();
 }
-
-/* ===== MEMORY ===== */
 
 static void	test_memset(void)
 {
@@ -199,8 +194,6 @@ static void	test_memcmp(void)
 	check(ft_memcmp("abc", "xyz", 0) == 0, "n=0 should always return 0");
 	end_fn();
 }
-
-/* ===== STRINGS ===== */
 
 static void	test_strlen(void)
 {
@@ -303,8 +296,6 @@ static void	test_strdup(void)
 	end_fn();
 }
 
-/* ===== CONVERSION ===== */
-
 static void	test_atoi(void)
 {
 	start_fn("ft_atoi");
@@ -341,8 +332,6 @@ static void	test_itoa(void)
 	end_fn();
 }
 
-/* ===== ALLOCATION ===== */
-
 static void	test_calloc(void)
 {
 	char	*p;
@@ -356,8 +345,6 @@ static void	test_calloc(void)
 	free(p);
 	end_fn();
 }
-
-/* ===== STRING MANIPULATION ===== */
 
 static void	test_substr(void)
 {
@@ -482,8 +469,6 @@ static void	test_striteri(void)
 	end_fn();
 }
 
-/* ===== OUTPUT (written to fd 1) ===== */
-
 static void	test_put_fds(void)
 {
 	printf("\n%s--- ft_put*_fd (visual check on stdout) ---%s\n", CYAN, RESET);
@@ -499,8 +484,6 @@ static void	test_put_fds(void)
 	ft_putnbr_fd(INT_MIN, 1);
 	printf("\n");
 }
-
-/* ===== LIST ===== */
 
 static void	del_int(void *p)
 {
@@ -587,8 +570,6 @@ static void	test_list(void)
 	check(lst == NULL, "lst should be NULL after clear");
 	end_fn();
 }
-
-/* ===== MAIN ===== */
 
 int	main(void)
 {
